@@ -22,6 +22,11 @@ private slots:
 
     void on_pushButton_3_clicked();
 
+signals:
+    void goDepartmentView();
+    void goDoctorView();
+    void goPatientView();
+
 private:
     Ui::welcomView *ui;
 };

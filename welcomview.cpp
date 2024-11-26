@@ -15,18 +15,18 @@ welcomView::~welcomView()
 
 void welcomView::on_pushButton_clicked()
 {
-
+    emit goDepartmentView();
 }
 
 
 void welcomView::on_pushButton_2_clicked()
 {
-
+    emit goDoctorView();
 }
 
 
 void welcomView::on_pushButton_3_clicked()
 {
-
+    emit goPatientView();
 }
 
