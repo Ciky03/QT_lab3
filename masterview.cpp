@@ -1,5 +1,6 @@
 #include "masterview.h"
 #include "ui_masterview.h"
+#include "idatabase.h"
 
 MasterView::MasterView(QWidget *parent)
     : QWidget(parent)
@@ -11,6 +12,8 @@ MasterView::MasterView(QWidget *parent)
 
     // 初始化时跳转到loginView
     goLoginView();
+
+    IDatabase::getInstance();
 }
 
 MasterView::~MasterView()
