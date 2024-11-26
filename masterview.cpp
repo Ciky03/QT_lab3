@@ -7,6 +7,8 @@ MasterView::MasterView(QWidget *parent)
 {
     ui->setupUi(this);
 
+    this->setWindowFlag(Qt::FramelessWindowHint);
+
     // 初始化时跳转到loginView
     goLoginView();
 }
