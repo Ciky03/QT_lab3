@@ -1,14 +1,14 @@
 #include "patientview.h"
 #include "ui_patientview.h"
 
-patientView::patientView(QWidget *parent)
+PatientView::PatientView(QWidget *parent)
     : QWidget(parent)
-    , ui(new Ui::patientView)
+    , ui(new Ui::PatientView)
 {
     ui->setupUi(this);
 }
 
-patientView::~patientView()
+PatientView::~PatientView()
 {
     delete ui;
 }

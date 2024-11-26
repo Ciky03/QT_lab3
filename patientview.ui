@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>patientView</class>
- <widget class="QWidget" name="patientView">
+ <class>PatientView</class>
+ <widget class="QWidget" name="PatientView">
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>490</width>
-    <height>315</height>
+    <width>520</width>
+    <height>344</height>
    </rect>
   </property>
   <property name="windowTitle">
-   <string>患者管理</string>
+   <string>Form</string>
   </property>
   <layout class="QVBoxLayout" name="verticalLayout">
    <item>

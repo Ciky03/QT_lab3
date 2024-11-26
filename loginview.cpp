@@ -1,14 +1,14 @@
 #include "loginview.h"
 #include "ui_loginview.h"
 
-loginView::loginView(QWidget *parent)
+LoginView::LoginView(QWidget *parent)
     : QWidget(parent)
-    , ui(new Ui::loginView)
+    , ui(new Ui::LoginView)
 {
     ui->setupUi(this);
 }
 
-loginView::~loginView()
+LoginView::~LoginView()
 {
     delete ui;
 }

@@ -1,14 +1,14 @@
 #include "doctorview.h"
 #include "ui_doctorview.h"
 
-doctorView::doctorView(QWidget *parent)
+DoctorView::DoctorView(QWidget *parent)
     : QWidget(parent)
-    , ui(new Ui::doctorView)
+    , ui(new Ui::DoctorView)
 {
     ui->setupUi(this);
 }
 
-doctorView::~doctorView()
+DoctorView::~DoctorView()
 {
     delete ui;
 }
