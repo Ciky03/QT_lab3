@@ -12,6 +12,20 @@ void IDatabase::initDatabase()
         qDebug() << "open database is ok";
 }
 
+bool IDatabase::initPatientModel()
+{
+    patientTabModel = new QSqlTableModel(this, database);
+    patientTabModel->setTable("patient");   //设置表
+    patientTabModel->setEditStrategy(QSqlTableModel::OnManualSubmit); //数据保存方式
+    patientTabModel->setSort(patientTabModel->fieldIndex("name"), Qt::AscendingOrder);  //排序
+
+    if (!(patientTabModel->select())) //查询数据库
+        return false;
+
+    thePatinentSelection = new QItemSelectionModel(patientTabModel);
+    return true;
+}
+
 QString IDatabase::userLogin(QString username, QString password)
 {
     QSqlQuery query;    //查询出当前记录的所有字段
