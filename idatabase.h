@@ -30,6 +30,10 @@ signals:
 
 public:
     bool initPatientModel();
+    bool searchPatient(QString filter);
+    bool delectCurrentPatinet();
+    bool submitPatient();
+    void reverPatient();
 
     QSqlTableModel *patientTabModel; //数据模型
     QItemSelectionModel *thePatinentSelection; //选择模型
